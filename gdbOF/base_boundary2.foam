@@ -1,0 +1,9 @@
+	BOUNDARYNAME     
+	{
+		type            BOUNDARYTYPE;
+		value           nonuniform List<BOUNDARYFORMAT> 
+	BOUNDARYSIZE
+	(
+	BOUNDARYCOEFFS
+	);
+	}

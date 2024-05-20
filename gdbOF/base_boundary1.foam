@@ -1,0 +1,4 @@
+	BOUNDARYNAME     
+	{
+		type            BOUNDARYTYPE;
+	}
