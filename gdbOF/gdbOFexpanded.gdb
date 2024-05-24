@@ -255,11 +255,11 @@ define pfvMatrixFull
 		set $sizeDiag = $arg0.diagPtr_.size_
 		shell sh  $GDBOFPATH/gdbOF/gdb2python.sh fileAux.gdbof
 		if $argc == 2
-			shell python $GDBOFPATH/gdbOF/fvMatrixFull.py $arg1
+			shell python2 $GDBOFPATH/gdbOF/fvMatrixFull.py $arg1
 		else
 			#no puedo aplicar control porque no paso como parametro variables globales aca			
 			#controlar en python
-			shell python $GDBOFPATH/gdbOF/fvMatrixFull.py $arg1 $arg2 $arg3 $arg4 $arg5
+			shell python2 $GDBOFPATH/gdbOF/fvMatrixFull.py $arg1 $arg2 $arg3 $arg4 $arg5
 		end
 		shell sh $GDBOFPATH/gdbOF/python2gdb.sh $arg1
 		#shell cat $arg1	
@@ -308,11 +308,11 @@ define pfvMatrixSparse
 		set $sizeDiag = $arg0.diagPtr_.size_
 		shell sh  $GDBOFPATH/gdbOF/gdb2python.sh fileAux.gdbof
 		if $argc == 2
-			shell python $GDBOFPATH/gdbOF/fvMatrixSparse.py $arg1
+			shell python2 $GDBOFPATH/gdbOF/fvMatrixSparse.py $arg1
 		else
 			#no puedo aplicar control porque no paso como parametro variables globales aca			
 			#controlar en python
-			shell python $GDBOFPATH/gdbOF/fvMatrixSparse.py $arg1 $arg2 $arg3 $arg4 $arg5
+			shell python2 $GDBOFPATH/gdbOF/fvMatrixSparse.py $arg1 $arg2 $arg3 $arg4 $arg5
 		end
 		shell sh $GDBOFPATH/gdbOF/python2gdb.sh $arg1
 		#shell cat $arg1	
